@@ -80,7 +80,8 @@ The name and contact email will be recorded together with the code changes when 
 When you work with Git, you often need to make small text files to describe a 'snapshot'. When this is necessary, Git will open whatever default text editor you have set. 
 This means it's often useful to choose which text editor you prefer, and set it as the default. On your local machine, you can set it to be whatever you like, but if you're working on a remote system, you will only have access to editors that are available there.
 
-Below is a list of commands to set the default editor to a list of common tools:
+Below is a list of commands to set the default editor to a list of common tools. If you don't have any of these available, you might want to install Sublime Text, which is a great option that you can download from [https://www.sublimetext.com/3](https://www.sublimetext.com/3).
+
 
 | Editor             | Configuration command                            |
 |:-------------------|:-------------------------------------------------|
@@ -98,7 +99,6 @@ Below is a list of commands to set the default editor to a list of common tools:
 | Emacs              | `$ git config --global core.editor "emacs"`   |
 | Vim                | `$ git config --global core.editor "vim"`   |
 
-If you do not have any of these available, Sublime Text is a great option which you can download from [https://www.sublimetext.com/3](https://www.sublimetext.com/3).
 
 > ## Git Help and Manual
 >
