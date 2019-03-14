@@ -197,7 +197,9 @@ Right after we query the status to get this useful command into our muscle memor
 $ git status
 ```
 
-Now try `git log`:
+### Looking at the history
+
+Now try `git log` to see the information that git has stored about your snapshot:
 
 ```shell
 $ git log
