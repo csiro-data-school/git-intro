@@ -56,6 +56,7 @@ There are lots of different tools that implement version control (generally refe
 
 - Often you want to experiment with an idea, or work on different approaches in one file - without branching this can be messy and confusing.
 - You can simulate branching by copying the entire code to multiple places but also this will be messy and confusing.
+- (We won't cover branching today, but in a future lesson)
 
 
 ### Reproducibility
