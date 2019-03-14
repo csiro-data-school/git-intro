@@ -2,7 +2,7 @@
 layout: episode
 title: Undoing things
 teaching: 10
-exercises: 10
+exercises: 15
 questions:
   - How can I undo things?
 objectives:
@@ -98,13 +98,13 @@ that haven't been staged/committed!
 > 
 > How much do you trust Git...?
 > 
-> Delete one of your files using any method you like.
+> Delete one (or more) of your committed files using any method you like.
 > 
-> Can you get it back?
+> Can you get it/them back?
 > 
 > > ## Solution to Challenge 2
 > > 
-> > As long as a file was committed, you can get it back with `git checkout <file>`
+> > As long as a file was committed, you can get it back with `git checkout <file>`, but Git isn't magic - you won't have any changes that weren't committed.
 > {: .solution}
 {: .challenge}
 

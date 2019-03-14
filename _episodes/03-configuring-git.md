@@ -1,63 +1,18 @@
 ---
 layout: episode
-title: Basics
+title: Configuring Git
 teaching: 20
-exercises: 25
+exercises: 15
 questions:
-  - What is Git?
-  - What is a repository?
-  - How does Git operate?
-  - How do I make commits?
-  - How do I select what to commit?
+  - How do we configure git?
+  - What are our options for text editors?
 objectives:
-  - Learn to create Git repositories and make commits.
-  - Get a grasp of the structure of a repository.
-  - Learn how to inspect the project history.
-  - Learn how to write useful commit log messages.
+  - Learn how to configure the most useful git options.
 keypoints:
-  - "Initializing a Git repository is simple: `git init`"
-  - Commits should be used to tell a story.
-  - Git uses the .git folder to store the snapshots.
+  - git configuration is all stored in `~/.gitconfig`
+  - The config is specific to each computer you use
 ---
 
-## What is Git, and what is a Git repository?
-
-- Git is a *version control system*: can record snapshots and track the content of a folder as it changes over time.
-- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
-- These snapshots are kept inside a sub-folder called `.git`.
-- If we remove `.git`, we remove the repository and history (but keep the working directory!).
-- `.git` uses relative paths - you can move the whole thing somewhere else and it will still work
-- Git doesn't do anything unless you ask it to (it does not record anything automatically).
-- Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
-
----
-
-## Recording a snapshot with Git
-
-- Git takes snapshots only if we request it.
-- We will record changes always in two steps (we will later explain why this is a recommended practice):
-
-```shell
-$ git add somefile.txt
-$ git commit
-
-$ git add file.txt anotherfile.txt
-$ git commit
-```
-
-- We first focus (`git add`, we "stage" the change), then shoot (`git commit`):
-
-![Git staging]({{ site.baseurl }}/fig/git_stage_commit.svg
-"git staging and committing"){:class="fig-responsive" style="max-width:70%"}
-
-> ## Discussion
->
-> What do you think will be the outcome if you stage a file and then edit it and stage it again, do this
-> several times and at the end perform a commit? (think of focusing several scenes and pressing the shoot
-> button only at the end)
-{: .discussion}
-
----
 
 ## Configuring Git
 
@@ -143,6 +98,7 @@ Below is a list of commands to set the default editor to a list of common tools:
 | Emacs              | `$ git config --global core.editor "emacs"`   |
 | Vim                | `$ git config --global core.editor "vim"`   |
 
+If you do not have any of these available, Sublime Text is a great option which you can download from [https://www.sublimetext.com/3](https://www.sublimetext.com/3).
 
 > ## Git Help and Manual
 >

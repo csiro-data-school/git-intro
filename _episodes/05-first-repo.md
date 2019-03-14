@@ -1,8 +1,8 @@
 ---
 layout: episode
 title: Our first repo 
-teaching: 20
-exercises: 25
+teaching: 30
+exercises: 30
 questions:
   - What is a repository?
   - How does Git operate?
