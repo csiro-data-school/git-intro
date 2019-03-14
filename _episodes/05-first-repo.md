@@ -45,7 +45,23 @@ $ git init
 
 That's it! We have now created an empty Git repository.
 
-We will use `git status` a lot to check out what is going on:
+If we use `ls` to show the directory’s contents, it appears that nothing has changed:
+
+```
+$ ls
+```
+
+But if we add the `-a` flag to show everything, we can see that Git has created a hidden directory
+within `recipe` called `.git`:  
+
+```
+$ ls -a 
+. ..  .git 
+```
+
+Git uses this special sub-directory to store all the information about the project, including all files and sub-directories located within the project’s directory. If we ever delete the .git sub-directory, we will lose the project’s history.
+
+We will use `git status` a lot to check out to see what is going on with the repository:
 
 ```shell
 $ git status
@@ -59,7 +75,48 @@ nothing to commit (create/copy files and use "git add" to track)
 
 We will make sense of this information during this lesson.
 
-Let's now **create two files**.
+
+## So what exactly is a Git repository?
+
+- Remember Git is a *version control system*: it records snapshots and tracks the content of a folder as it changes over time.
+- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
+- These snapshots are kept inside the `.git` sub-folder.
+- If we remove `.git`, we remove the repository and history (but keep the working directory!).
+- `.git` uses relative paths - you can move the whole thing somewhere else and it will still work
+- Git doesn't do anything unless you ask it to (it does not record anything automatically).
+
+---
+
+## Recording a snapshot with Git
+
+- Git takes snapshots only if we request it.
+- We will record changes always in two steps (we will later explain why this is a recommended practice):
+
+```shell
+$ git add somefile.txt
+$ git commit
+
+$ git add file.txt anotherfile.txt
+$ git commit
+```
+
+- We first focus (`git add`, we "stage" the change), then shoot (`git commit`):
+
+![Git staging]({{ site.baseurl }}/fig/git_stage_commit.svg
+"git staging and committing"){:class="fig-responsive" style="max-width:70%"}
+
+> ## Discussion
+>
+> What do you think will be the outcome if you stage a file and then edit it and stage it again, do this
+> several times and at the end perform a commit? (think of focusing several scenes and pressing the shoot
+> button only at the end)
+{: .discussion}
+
+---
+
+So that's the concept - let's do it for real.
+
+Let's **create two files**.
 
 One file is called `instructions.txt` and contains:
 
