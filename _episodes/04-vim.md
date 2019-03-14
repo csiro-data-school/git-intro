@@ -1,7 +1,7 @@
 ---
 title: "Introducing Vim"
 teaching: 15
-exercises: 45
+exercises: 15
 questions:
 - "What is Vim?"
 - "Why should I put in the effort to learn it?"
@@ -94,13 +94,13 @@ One you are in place, type `i` to enter insert mode on the left-hand-side of the
 
 
 
-There are lots of resources available to help you learn Vim. Vim even has its own tutorial. Exit vim, then from the shell, type:
+There are lots of resources available if you decide to learn Vim. However there is nothing wrong with using a different text editor, just make sure you are comfortable saving and exiting Vim, and you'll be fine.
 
 > ## Vim's own tutorial:
+> Vim even has its own tutorial. From the shell, type:
 > ~~~
 > vimtutor
 > ~~~
-> work through the first 2 lessons
 {: .challenge}
 
 > ## Interactive Vim instructor:

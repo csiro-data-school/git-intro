@@ -1,7 +1,7 @@
 ---
 layout: episode
 title: Configuring Git
-teaching: 20
+teaching: 15
 exercises: 15
 questions:
   - How do we configure git?
