@@ -6,7 +6,6 @@ exercises: 20
 questions:
   - How can I set up a public repository online?
   - How can I clone a public repository to my computer?
-  - How does version control scale from 1 to N users per repository?
 objectives:
   - To get a feeling for remote repositories 
   - Learn how to publish a repository on the web.
